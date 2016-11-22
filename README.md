@@ -1,12 +1,9 @@
-# react-redux-assessment
-
 # Building a client-side application with React-Redux
 
 ## Objectives
 
 1. Demonstrate mastery of material in this course
 2. Push yourself — integrate with a new API!
-
 
 ## Woo!
 You made it! All of your hard work and long hours have lead you here... to this moment... a moment of glory! You've earned every gym badge, defeated every boss, wrestled with your inner daemons (heh) to ultimately lead you to this.
@@ -17,7 +14,6 @@ You made it! All of your hard work and long hours have lead you here... to this 
 
 This lesson covers your final assignment. It is supposed to be your magnum opus — a culmination of
 all the skills you've learned so far. It's going to be a tough one, but you'll make it through.
-
 
 ## Overview
 This assignment is open-ended when it comes to the actual content. You are free to create
