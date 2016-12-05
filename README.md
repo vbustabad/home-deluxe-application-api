@@ -34,16 +34,13 @@ Restrictions:
 ## Requirements
 
 - The code should be written in ES6 as much as possible
-- You may use the files already provided in this lab to start or use a generator inside of this root folder.
+- Use the `create-react-app` generator to start your project.
+	- Follow the instructions on this repo to setup the generator: [create-react-app](https://github.com/facebookincubator/create-react-app)
 - Your app should have one HTML page to render your react-redux application
 - The Application must make use of `react-router` and proper RESTful routing
 - Use Redux middleware to respond to and modify state change
 - Make use of async actions to send data to and receive data from a server
-- Any data should be provided by an external API
-- Feel free to create your own API or use one from the list provided
-	- Fetching some data from a remote source: If you're creating a Twitter or Reddit feed, getting the data
-should be relatively straight-forward. If you are creating an app that does not really have a use
-for fetching remote data, create a backend API to handle the data persistance. You should be using `fetch()` within your actions to GET and POST data from an external source - do not use
+- Your Rails API should handle the data persistance. You should be using `fetch()` within your actions to GET and POST data from your API - do not use
 jQuery methods.
 - Your client-side application should handle the display of data with minimal data manipulation
 - Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to
@@ -51,13 +48,9 @@ write (additional) CSS yourself, go for it!
 
 Go wild! These are only the basic requirements — you're free to add on as much stuff as you'd like.
 
-## Sample list of APIs to use
+## Hooking up a Rails API backend
 
-- [RedditAPI](https://www.reddit.com/dev/api/)
-- [ImgurAPI](https://api.imgur.com/)
-- [OMDbAPI](http://www.omdbapi.com/)
-- [TwitterAPI](https://dev.twitter.com/overview/api)
-- [TwitchAPI](https://dev.twitch.tv/)
+Use this blog to hook up a React-Redux frontend to your rails API backend: [Setup Rails API with React](https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/)
 
 ## Assessment
 
