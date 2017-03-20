@@ -40,7 +40,7 @@ Restrictions:
 - There should be 2 containor components
 - There should be 5 stateless components
 - There should be 3 routes
-- The Application must make use of `react-router` and proper RESTful routing
+- The Application must make use of `react-router` and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate [docs](https://github.com/ReactTraining/react-router/tree/v3/docs); docs for v4 can be found [here](https://reacttraining.com/react-router/web/guides/quick-start))
 - Use Redux middleware to respond to and modify state change
 - Make use of async actions to send data to and receive data from a server
 - Your Rails API should handle the data persistance. You should be using `fetch()` within your actions to GET and POST data from your API - do not use
