@@ -27,10 +27,6 @@ you don't have any inspiration at the moment, here are a couple of ideas:
 - Crossword puzzle
 - A simple board game 
 
-Restrictions:
-
-- Do not recreate blackjack or anything like blackjack (i.e. war)
-
 ## Requirements
 
 - The code should be written in ES6 as much as possible
@@ -79,3 +75,5 @@ it can be improved. Ask us questions if you don't understand (or even if you thi
 - You won't be yelled at, belittled, or scolded
 - You won't be put on the spot without support
 - There's nothing you can do to instantly fail or blow it.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-redux-assessment'>React Redux Portfolio Project</a> on Learn.co and start learning to code for free.</p>
