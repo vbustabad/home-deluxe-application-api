@@ -42,8 +42,8 @@ you don't have any inspiration at the moment, here are a couple of ideas:
 - Your Rails API should handle the data persistence. You should be using `fetch()` within your actions to GET and POST data from your API - do not use
 jQuery methods.
 - Your client-side application should handle the display of data with minimal data manipulation
-- Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to
-write (additional) CSS yourself, go for it!
+- Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it!
+- [Once your app is complete, fill out this checklist.](https://goo.gl/forms/ULtKsxuzWomvXuTk2)
 
 Go wild! These are only the basic requirements — you're free to add on as much stuff as you'd like.
 
