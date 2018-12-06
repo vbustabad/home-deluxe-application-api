@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://github.com/vbustabad/react-redux-assessment-v-000.git
+	fetch = +refs/*:refs/*
+	mirror = true
+[remote "new-origin"]
+	url = https://github.com/vbustabad/home-deluxe-application-api.git
+	fetch = +refs/heads/*:refs/remotes/new-origin/*
