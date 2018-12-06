@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
 
     private
 
+    def home
+      render :home
+    end 
+
     def logged_in?
       !!session[:user_id]
     end
