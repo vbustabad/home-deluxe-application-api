@@ -3,10 +3,12 @@ class UserController < ApplicationController
     
     def index
         @users = User.all
+        render json: @users, status: 200
     end
 
     def new
         @user = User.new
+        render json: @user, status: 200
     end
 
     def create
@@ -14,17 +16,17 @@ class UserController < ApplicationController
 
         if @user.save
             session[:user_id] = @user.id
-            redirect_to user_path(@user)
-        else
-            redirect_to root_path
-        end
+            render json: @user
+        else 
+            render json: {message: @user.errors.full_messages}, status: 400
+        end 
     end
 
     def show
         @user = User.find(params[:id])
 
         if current_user == @user
-            render :show
+            render json: @user, status: 200
         else
             redirect_to root_path
         end
@@ -42,16 +44,26 @@ class UserController < ApplicationController
         end
     end
 
-    def update
+    def update 
         @user = User.find(params[:id])
         @user.update(user_params)
 
         if @user.save
-            redirect_to user_path(@user)
+            render json: @user
         else
-            render :edit
+            render json: {message: @user.errors.full_messages}, status: 400
         end
-    end
+    end 
+
+    def destroy
+        @user = User.find(params[:id])
+
+        if @user.destroy
+            render json: @user {message: "User has been successfully deleted."}, status: 200
+        else
+            render json: {message: "Unable to delete this user."}, status: 400
+        end 
+    end 
 
     private
 

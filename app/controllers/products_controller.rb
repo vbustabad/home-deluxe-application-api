@@ -1,17 +1,29 @@
-class ProductsController < ApplicationController
+class Api::ProductsController < ApplicationController
+    skip_before_action :verify_authenticity_token
+    
+    def index 
+        @products = Product.all
+        render json: @products
+    end 
     
     def new 
         @product = Product.new
+        render json: @product, status: 200
     end 
 
     def create
         @product = Product.new(product_params)
 
         if @product.save
-            redirect_to product_path(@product)
+            render json: @product
         else 
-            render :new
+            render json: @product.errors.full_messages, status: 400
         end 
+    end 
+
+    def show
+        @product = Product.find(params[:id])
+        render json: @product, status: 200
     end 
 
     def edit
@@ -29,16 +41,20 @@ class ProductsController < ApplicationController
         @product.update(product_params)
 
         if @product.save
-            redirect_to product_path(@product)
+            render json: @product
         else
-            render :edit
+            render json: @product.errors.full_messages, status: 400
         end
     end 
 
     def destroy
         @product = Product.find(params[:id])
-        @product.destroy
-        redirect_to store_path
+
+        if @product.destroy
+            render json: @product, status: 200
+        else
+            render json: @product.errors.full_messages, status: 400
+        end 
     end 
 
     private
